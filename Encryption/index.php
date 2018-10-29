@@ -24,10 +24,10 @@ and open the template in the editor.
         //$rsa->generateKey();
         $keys = $rsa->retrieveKey();
         $cypher = $rsa->encrypt($data, $keys['private'],
-                $keys['public'], 555);
+                $keys['public'], 333);
         echo 'Cypher data is: ' . base64_encode($cypher) . '<br>';
         $orgData = $rsa->decrypt($cypher, $keys['private'],
-                $keys['public'], 555);
+                $keys['public'], 333);
         echo 'Original data is: ' . $orgData . '<br>';
         
         ?>
